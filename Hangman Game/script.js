@@ -12,9 +12,10 @@ let words;
 let selectedWord;
 
 async function getWords() {
-    const response = await fetch('https://random-word-api.herokuapp.com/word?key=4VEDK2SF&number=1');
+    const response = await fetch('https://random-word-api.herokuapp.com/word?key=MAH4OX82&number=1');
     words = await response.json();
     selectedWord = words[0];
+    console.log(words);
     displayWord();
 }
 
