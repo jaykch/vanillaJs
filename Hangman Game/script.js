@@ -4,8 +4,8 @@ const playAgainBtn = document.getElementById('play-button');
 const popup = document.getElementById('popup-container');
 const notification = document.getElementById('notification-container');
 const finalMessage = document.getElementById('final-message');
-
 const figureParts = document.querySelectorAll('.figure-part');
+const prompt = document.getElementById('prompt');
 
 // const words = ['application', 'programming', 'interface', 'wizard'];
 let words;
@@ -17,6 +17,7 @@ async function getWords() {
     selectedWord = words[0];
     console.log(words);
     displayWord();
+    prompt.focus();
 }
 
 const correctLetters = [];

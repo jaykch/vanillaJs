@@ -73,6 +73,10 @@ h1 {
     width: 20px;
 }
 
+#prompt{
+    opacity: 0;
+}
+
 .popup-container {
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -127,4 +131,10 @@ h1 {
 
 .notification-container.show {
     transform: translateY(-50px);
+}
+
+@media only screen and (max-width: 764px) {
+    .game-container {
+        width: 350px;
+    }
 }
