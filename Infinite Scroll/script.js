@@ -11,9 +11,7 @@ async function getPosts() {
     `https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`
   );
 
-  const data = await res.json();
-
-  return data;
+  return await res.json();
 }
 
 // Show posts in DOM
